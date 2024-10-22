@@ -1,0 +1,45 @@
+/* Perfil.css */
+
+.perfil-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .perfil-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .perfil-box {
+    background-color: #f7f2e8;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left; /* Alinear los textos a la izquierda */
+  }
+  
+  .perfil-box h2 {
+    color: #52796f; /* Color del título */
+  }
+  
+  .perfil-box p {
+    color: #52796f; /* Color de los textos */
+    margin: 10px 0; /* Espaciado entre los párrafos */
+  }
+  
+  .edit-button {
+    background-color: #84a98c; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave para cambios de color */
+  }
+  
+  .edit-button:hover {
+    background-color: #52796f; /* Color de fondo al hacer hover */
+  }
+  

@@ -1,0 +1,194 @@
+/* Home.css */
+.h2-card{
+  color:#f7f2e8;
+}
+.home-container {
+  display: flex;
+  flex-direction: column; /* Asegúrate de que los hijos se coloquen en columna */
+  height: 100vh; /* Altura completa de la ventana */
+  width: 100%; /* Asegúrate de que el contenedor ocupe el 100% del ancho */
+  margin: 0; /* Sin márgenes */
+}
+
+.home-header {
+  background-color: #52796f; /* Color de fondo del header */
+  color: white; /* Color del texto */
+  padding: 20px; /* Espaciado interno */
+  width: 100%; /* Asegúrate de que el header ocupe el 100% del ancho */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between; /* Mantiene el espacio entre el título y el navbar */
+  align-items: center; /* Alinea verticalmente */
+  width: 100%; /* Asegúrate de que el contenedor ocupe el 100% del ancho */
+}
+
+.header-title {
+  margin: 0; /* Sin margen */
+}
+
+.navbar {
+  display: flex; /* Usar flexbox para el navbar */
+  padding: 0; /* Sin padding */
+  padding-right: 15px;
+}
+
+.nav-links {
+  list-style-type: none; /* Sin viñetas */
+  padding: 20px; /* Sin padding */
+  margin: 0; /* Sin margen */
+  display: flex; /* Usar flexbox para alinear los enlaces */
+}
+
+.nav-links li {
+  margin-left: 20px; /* Aumentado el margen para más espacio entre los elementos */
+  color: white; /* Color del texto */
+  cursor: pointer; /* Cambiar cursor al pasar el mouse */
+  padding: 10px 15px; /* Espaciado interno para que los bordes redondeados sean visibles */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave para cambios de color */
+}
+
+.nav-links li:hover,
+.nav-links li:active {
+  background-color: #f7f2e8; /* Color de fondo al hacer hover o al presionar */
+  color: #52796f; /* Color del texto al hacer hover o al presionar */
+}
+
+.content {
+  margin-top: 20px; /* Margen superior para que el contenido no quede demasiado cerca del header */
+  flex: 1; /* Para ocupar el resto del espacio disponible */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para el carrusel de productos */
+.product-carousel {
+  background-color: #f7f2e8; /* Color de fondo del carrusel */
+  padding: 20px; /* Espaciado interno */
+  margin: 20px; /* Margen en relación al header y los costados */
+  border-radius: 10px; /* Bordes redondeados */
+  text-align: center; /* Centrar el texto */
+}
+
+.product-item {
+  color: #52796f; /* Color de los productos */
+  margin: 10px 0; /* Espaciado entre los productos */
+}
+
+/* Estilos para las cards */
+.product-cards {
+  margin: 20px; /* Margen en relación al header y los costados */
+  text-align: center; /* Centrar el texto */
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 20px; /* Espaciado entre las cards */
+}
+
+.card {
+  background-color: #cad2c5; /* Color de fondo de las cards */
+  color: #52796f; /* Color del texto */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  transition: transform 0.3s; /* Transición suave para efectos */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumentar un poco el tamaño al hacer hover */
+}
+
+/* Estilos para el footer */
+.home-footer {
+  background-color: #52796f; /* Color de fondo del footer */
+  color: white; /* Color del texto */
+  padding: 20px; /* Espaciado interno */
+  width: 100%; /* Asegúrate de que el footer ocupe el 100% del ancho */
+  display: flex; /* Usar flexbox para alinear los elementos */
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center; /* Alinear verticalmente */
+}
+
+.footer-title {
+  margin: 0; /* Sin margen */
+  flex: 1; /* Para que ocupe el espacio disponible a la izquierda */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.footer-content {
+  flex: 2; /* Para que ocupe el espacio central */
+  text-align: center; /* Centrar el texto */
+  padding-left: 70px;
+}
+
+.footer-contact {
+  font-weight: bold; /* Texto en negrita */
+  margin-left: 10px; /* Espaciado a la izquierda para separarlo del logo */
+}
+
+.footer-navbar {
+  flex: 1; /* Para que ocupe el espacio a la derecha */
+  display: flex; /* Usar flexbox para el navbar */
+  justify-content: flex-start; /* Alinear a la izquierda */
+  padding-right: 50px;
+}
+
+.footer-nav-links {
+  list-style-type: none; /* Sin viñetas */
+  padding: 0; /* Sin padding */
+  margin: 0; /* Sin margen */
+  display: flex; /* Usar flexbox para alinear los enlaces */
+}
+
+.footer-nav-links li {
+  margin-left: 20px; /* Espacio entre los elementos */
+  color: white; /* Color del texto igual que en el header */
+  cursor: pointer; /* Cambiar cursor al pasar el mouse */
+  padding: 10px 15px; /* Espaciado interno para que los bordes redondeados sean visibles */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave para cambios de color */
+}
+
+.footer-nav-links li:hover,
+.footer-nav-links li:active {
+  background-color: #f7f2e8; /* Color de fondo al hacer hover o al presionar */
+  color: #52796f; /* Color del texto al hacer hover o al presionar */
+}
+.currency-info {
+  display: flex; /* Usar flexbox para alinear el ícono y el texto */
+  align-items: center; /* Alinear verticalmente */
+  color: white; /* Color del texto */
+  cursor: default; /* Cambiar cursor al pasar el mouse */
+  margin-left: 20px; /* Espacio a la izquierda */
+}
+
+.currency-info svg {
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+/* Home.css */
+
+.carousel-container {
+  margin: 20px auto; /* Centramos el carrusel */
+  max-width: 1200px; /* Máximo ancho del carrusel */
+}
+
+.carousel-image {
+  width: 100%; /* Las imágenes ocuparán todo el ancho del card */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+/* ... (código posterior) */
+
+
+
+
+
+
+
+
+
+  

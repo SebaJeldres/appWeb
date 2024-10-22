@@ -1,0 +1,31 @@
+/* Header.css */
+.nav-links {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+    margin: 0; /* Sin margen */
+    display: flex; /* Usar flexbox para alinear los enlaces */
+  }
+  
+  .nav-links li {
+    margin-left: 20px; /* Espacio entre los elementos */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    padding: 10px 15px; /* Espaciado interno para que los bordes redondeados sean visibles */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para cambios de color */
+  }
+  
+  /* Estilos para los enlaces (sin subrayado y color predeterminado) */
+  .nav-links a {
+    text-decoration: none; /* Quitar subrayado */
+    color: inherit; /* Heredar el color del elemento padre (blanco en este caso) */
+  }
+  
+  .nav-links a:hover,
+  .nav-links a:active {
+    background-color: #f7f2e8; /* Color de fondo al hacer hover */
+    color: #52796f; /* Color del texto al hacer hover */
+  }
+  .header-title{
+    padding-left: 10px;
+  }

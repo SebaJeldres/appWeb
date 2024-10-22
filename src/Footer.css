@@ -1,0 +1,64 @@
+/* Footer.css */
+.home-footer {
+  background-color: #52796f; /* Color de fondo del footer */
+  color: white; /* Color del texto */
+  padding: 20px; /* Espaciado interno */
+  width: 100%; /* Asegúrate de que el footer ocupe el 100% del ancho */
+  display: flex; /* Usar flexbox para alinear los elementos */
+  justify-content: space-between; /* Espacio entre los elementos */
+  align-items: center; /* Alinear verticalmente */
+}
+
+.footer-title {
+  margin: 0; /* Sin margen */
+  flex: 1; /* Para que ocupe el espacio disponible a la izquierda */
+  text-align: left;
+  padding-left: 10px; /* Alinear el texto a la izquierda */
+}
+
+.footer-content {
+  flex: 2; /* Para que ocupe el espacio central */
+  text-align: center; /* Centrar el texto */
+  padding-left: 70px;
+}
+
+.footer-contact {
+  font-weight: bold; /* Texto en negrita */
+  margin-left: 10px; /* Espaciado a la izquierda para separarlo del logo */
+}
+
+.footer-navbar {
+  flex: 1; /* Para que ocupe el espacio a la derecha */
+  display: flex; /* Usar flexbox para el navbar */
+  justify-content: flex-start; /* Alinear a la izquierda */
+  padding-right: 50px;
+}
+
+.footer-nav-links {
+  list-style-type: none; /* Sin viñetas */
+  padding: 0; /* Sin padding */
+  margin: 0; /* Sin margen */
+  display: flex; /* Usar flexbox para alinear los enlaces */
+}
+
+.footer-nav-links li {
+  margin-left: 20px; /* Espacio entre los elementos */
+  color: white; /* Color del texto igual que en el header */
+  cursor: pointer; /* Cambiar cursor al pasar el mouse */
+  padding: 10px 15px; /* Espaciado interno para que los bordes redondeados sean visibles */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave para cambios de color */
+}
+
+/* Quitar el estilo de enlace y aplicar hover al li */
+.footer-nav-links a {
+  text-decoration: none; /* Quitar subrayado */
+  color: inherit; /* Heredar el color del elemento padre (blanco en este caso) */
+}
+
+.footer-nav-links li:hover,
+.footer-nav-links li:active {
+  background-color: #f7f2e8; /* Color de fondo al hacer hover o al presionar */
+  color: #52796f; /* Color del texto al hacer hover o al presionar */
+}
+

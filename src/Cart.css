@@ -1,0 +1,66 @@
+/* Cart.css */
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  align-items: center; /* Centrar el contenido en el eje horizontal */
+}
+
+.cart-title {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #f7f2e8;
+  text-align: center;
+}
+
+.cart-content {
+  flex: 1;
+  padding: 20px;
+  display: flex; /* Usar flexbox para el contenido */
+  justify-content: center; /* Centrar el contenido en la dirección horizontal */
+}
+
+.cart-box {
+  background-color: #f7f2e8;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left; /* Alinear el texto a la izquierda */
+  width: 300px; /* Ancho del cuadrado */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el cuadrado */
+}
+
+.cart-product-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-product-list li {
+  color: #52796f;
+  margin: 10px 0;
+}
+
+.cart-summary, .cart-total {
+  color: #52796f;
+  margin-top: 10px;
+}
+
+.pay-button {
+  background-color: #84a98c; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px 15px; /* Espaciado interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  margin-top: 15px; /* Espacio superior */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+.pay-button:hover {
+  background-color: #52796f; /* Color de fondo al pasar el mouse */
+}
+
+
+  

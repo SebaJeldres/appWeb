@@ -1,0 +1,141 @@
+/* Asegura que el contenedor principal ocupe el 100% de la pantalla */
+.products-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; /* Altura total de la vista */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estilos para la lista de productos */
+  .products-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Distribuye las cards en columnas automáticas */
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos para cada card de producto */
+  .product-card {
+    background-color: #f7f2e8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Encabezados y detalles de producto */
+  .product-card h3 {
+    color: #52796f;
+    margin-bottom: 10px;
+  }
+  
+  /* Botón "Añadir al carrito" */
+  .add-to-cart-button {
+    background-color: #84a98c;
+    color: white;
+    padding: 10px 15px; /* Espaciado */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #52796f; /* Cambio de color en hover */
+  }
+  
+  /* Estilos para el modal */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #f7f2e8;
+    padding: 25px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el modal */
+    text-align: center;
+    color: #354f52;
+  }
+  
+  .modal-content h4 {
+    color: #52796f;
+    margin-bottom: 15px;
+  }
+  
+  .modal-content p {
+    margin-bottom: 10px;
+    color: #2f3e46;
+  }
+  
+  /* Botón de cerrar modal */
+  .close-modal-button {
+    background-color: #84a98c; /* Color del botón de cerrar */
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  
+  .close-modal-button:hover {
+    background-color: #52796f; /* Cambio de color en hover */
+  }
+  
+  /* Ajustes para el footer */
+  footer {
+    width: 100%;
+  }
+  
+  /* Estilos para los botones generales */
+button {
+    background-color: #84a98c; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de la fuente */
+    margin-top: 10px; /* Espaciado superior */
+  }
+  
+  button:hover {
+    background-color: #52796f; /* Color de fondo al pasar el mouse */
+  }
+  
+  /* Botón "Añadir al carrito" reutiliza el estilo general */
+  .add-to-cart-button {
+    margin-top: 10px;
+  }
+  
+  /* Botón para cerrar el modal (mismo estilo que los demás botones) */
+  .close-modal-button {
+    margin-top: 15px; /* Espaciado superior personalizado */
+  }
+  
+  /* Botón "Ver detalles" en la card del producto */
+  .view-details-button {
+    margin-top: 10px; /* Espaciado superior para el botón de detalles */
+  }
+  
